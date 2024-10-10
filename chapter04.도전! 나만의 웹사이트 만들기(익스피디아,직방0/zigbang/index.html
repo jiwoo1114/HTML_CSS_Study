@@ -12,12 +12,17 @@
       <link rel="stylesheet" href="./css/style.css" />
    </head>
    <body>
+      <!-- 전체를 감싸는 div -->
       <div class="wrap">
+         <!-- 헤더 -->
          <header>
+            <!-- 헤더를 감싸는 div -->
             <nav class="nav">
+               <!-- 로고 -->
                <a href="./index.html" class="nav__logo" style="width: 200px">
                   <img src="./images/logo.png" alt="로고" width="200" />
                </a>
+               <!-- 메뉴(하위메뉴 포함) -->
                <ul class="nav__menu" style="width: 900px">
                   <li>
                      <a href="#">
@@ -77,6 +82,7 @@
                      </ul>
                   </li>
                </ul>
+               <!-- 로그인,중개사무소 창 -->
                <div class="right-menu" style="width: calc(100% - 1100px); display: flex; justify-content: flex-end">
                   <div style="display: flex">
                      <button type="button" class="login">로그인 및 회원가입</button>
@@ -89,6 +95,8 @@
                </div>
             </nav>
          </header>
+         <!-- 메인 -->
+         <!-- 어느 집을 찾고계세요?  -->
          <main class="main">
             <nav class="main_screen">
                <section class="main-section sumnail">
@@ -123,7 +131,7 @@
                      <div class="sub-news money">
                         <div><p>소개할게요</p></div>
                         <hr />
-                        <div></div>
+                        <div class="money_maintext"></div>
                      </div>
                      <div class="sub-news news2">
                         <div class="sub-news_text">
@@ -131,6 +139,7 @@
                            <div><button type="button" class="news_button1">더보기</button></div>
                         </div>
                         <hr />
+                        <div class="news_maintext"></div>
                      </div>
 
                      <div class="sub-news option">
@@ -139,6 +148,7 @@
                            <div><button type="button" class="news_button2">더보기</button></div>
                         </div>
                         <hr />
+                        <div class="option_maintext"></div>
                      </div>
                   </div>
                </section>
@@ -151,6 +161,7 @@
                      </a>
                   </div>
                   <div class="download_banner">
+                     <!-- 직방 다운텍스트,아이폰 갤럭시 링크 -->
                      <div class="banner_text"><p>직방앱을 다운받으세요!</p></div>
 
                      <div class="download_bar">
@@ -164,14 +175,38 @@
                            <a href="#"><i class="fa-brands fa-google-play"></i> Android</a>
                         </div>
                      </div>
-                     =
+                     
                   </div>
                </section>
             </nav>
          </main>
          <!-- 푸터 -->
          <footer class="footer">
-            <div class="footer"></div>
+            <div class="footer_wrap">
+              
+                  <p class="footer_link">
+                     <a href="#">회사소개</a>
+                     <a href="#">채용정보</a>
+                     <a href="#">이용약관</a>
+                     <a href="#">개인정보 처리방침</a>
+                     <a href="#">위치기반 서비스 이용약관</a>
+                     <a href="#">중개사 사이트 바로가기</a>
+                  </p>
+               
+               <div class="footer_last">
+                  <p></p>
+                  <br/>
+                  <a href="#"></a>
+                  <a href="#"></a>
+                  <a href="#"></a>
+                  <p>
+                     <a href="#"></a>
+                     <a href="#"></a>
+                     <a href="#"></a>
+                     <a href="#"></a>
+                  </p>
+               </div>
+            </div>
          </footer>
       </div>
 

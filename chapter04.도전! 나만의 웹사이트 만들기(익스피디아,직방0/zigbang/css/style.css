@@ -336,3 +336,16 @@ nav .right-menu__btn {
 footer {
    height: 300px;
 }
+
+.footer_wrap{
+   height: 300px;
+   width: 900px;
+   margin: 0 auto;
+   padding: 20px;
+
+}
+
+.footer_link{
+   padding: 0 10px 0 10px;
+}
+
