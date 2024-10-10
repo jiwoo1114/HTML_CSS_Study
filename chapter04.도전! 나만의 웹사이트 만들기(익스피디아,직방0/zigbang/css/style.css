@@ -82,6 +82,10 @@ nav .right-menu__btn {
    display: flex;
 }
 
+.nav__menu >li > a:hover{
+   color: orange;
+}
+
 /* 하위메뉴 */
 
 .sub-menu {
@@ -103,6 +107,17 @@ nav .right-menu__btn {
 
 .sub-menu > li {
    padding: 10px;
+}
+/* 버튼 */
+.login{margin-top: 5px;}
+
+.right-menu__btn,.jump{
+   color: darkgreen;
+   font-weight: bolder;
+}
+
+.right-menu__btn:hover{
+   background-color: lightgray;
 }
 
 /* 메인 */
@@ -194,6 +209,8 @@ nav .right-menu__btn {
    background-color: orange;
 }
 
+/* 소개글 세 박스 부분 */
+
 .news {
    width: 100%;
    padding-top: 30px;
@@ -207,6 +224,8 @@ nav .right-menu__btn {
    margin: 0 auto;
 }
 
+/* 첫 번째 박스 */
+
 .sub-news {
    width: 300px;
    height: 270px;
@@ -219,6 +238,7 @@ nav .right-menu__btn {
 }
 
 .money div:nth-of-type(2) {
+   height: 150px;
    background-image: url(../images/money.png);
    background-position: center;
    background-size: 100% 100%;
@@ -235,18 +255,18 @@ nav .right-menu__btn {
 }
 
 .sub-news_text > p {
-   width: 70%;
+   width: 80%;
    font-size: 20px;
    font-weight: bolder;
 }
-
+/* 두 번째 박스 */
 .sub-news_option {
    display: flex;
    height: 20px;
 }
 
 .sub-news_option > p {
-   width: 70%;
+   width: 80%;
    font-size: 20px;
    font-weight: bolder;
 }
@@ -263,7 +283,41 @@ nav .right-menu__btn {
 .news_button2:hover {
    background-color: darkgrey;
 }
-/* 메인3 직방앱 다운로드 부분분 */
+
+.news_maintext{
+   font-size: 13px;
+   height: 150px;
+}
+
+.news_maintext > div{
+   width: 100%; /* 필요한 너비를 설정(필수) */
+   white-space: nowrap; /* 텍스트가 줄 바꿈되지 않도록 설정(필수) */
+   overflow: hidden; /* 넘치는 텍스트를 숨김(필수) */
+   text-overflow: ellipsis; /* 넘치는 텍스트를 말줄임표로 표시(필수) */
+   padding: 5px;
+}
+
+.news_maintext > div > a:hover{background-color: lightgray;}
+
+/* 3번 박스 */
+
+.option_maintext{
+   font-size: 13px;
+   height: 150px;
+}
+
+.option_maintext > div{
+   width: 100%; /* 필요한 너비를 설정(필수) */
+   white-space: nowrap; /* 텍스트가 줄 바꿈되지 않도록 설정(필수) */
+   overflow: hidden; /* 넘치는 텍스트를 숨김(필수) */
+   text-overflow: ellipsis; /* 넘치는 텍스트를 말줄임표로 표시(필수) */
+   padding: 5px;
+}
+
+.option_maintext > div > a:hover{background-color: lightgray;}
+
+
+/* 메인3 직방앱 다운로드 부분 */
 .download {
    height: 350px;
    background-color: lightgrey;
@@ -367,6 +421,11 @@ footer {
 .footer_underbar{
    padding-right: 5px;
    border-right: 1px solid lightgray;
+}
+
+.cofyliter{
+   text-align: center;
+   color: gray;
 }
 
 
