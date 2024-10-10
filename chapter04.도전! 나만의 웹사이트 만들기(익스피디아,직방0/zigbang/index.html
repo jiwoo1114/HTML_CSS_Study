@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ko">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>직방사이트</title>
+
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+
+      <link rel="stylesheet" href="./fontawesome-free-6.6.0-web/css/all.min.css" />
+
+      <link rel="stylesheet" href="./css/style.css" />
+   </head>
+   <body>
+      <div class="wrap">
+         <header>
+            <nav class="nav">
+               <a href="./index.html" class="nav__logo" style="width: 200px">
+                  <img src="./images/logo.png" alt="로고" width="200" />
+               </a>
+               <ul class="nav__menu" style="width: 900px">
+                  <li>
+                     <a href="#">
+                        <span class="w1">아파트</span>
+                        <span class="w2">매매/월세/신축분양</span>
+                     </a>
+                     <ul class="sub-menu">
+                        <li><a href="#">매매/전월세</a></li>
+                        <li><a href="#">신축분양</a></li>
+                        <li><a href="#">인구흐름</a></li>
+                     </ul>
+                  </li>
+                  <li>
+                     <a href="#">
+                        <span class="w1">빌라, 투룸+</span>
+                        <span class="w2">신축분양/매매/전월세</span>
+                     </a>
+                     <ul class="sub-menu">
+                        <li><a href="#">빌라, 투룸 찾기</a></li>
+                        <li><a href="#">찜한 매물</a></li>
+                        <li><a href="#">빌라 내놓기(전월세만)</a></li>
+                     </ul>
+                  </li>
+                  <li>
+                     <a href="#">
+                        <span class="w1">원룸</span>
+                        <span class="w2">전월세</span>
+                     </a>
+                     <ul class="sub-menu">
+                        <li><a href="#">방찾기</a></li>
+                        <li><a href="#">찜한 매물</a></li>
+                        <li><a href="#">방 내놓기(전월세만)</a></li>
+                     </ul>
+                  </li>
+                  <li>
+                     <a href="#">
+                        <span class="w1">오피스텔</span>
+                        <span class="w2">도시형생활주택/전월세</span>
+                     </a>
+                     <ul class="sub-menu">
+                        <li><a href="#">오피스텔 찾기</a></li>
+                        <li><a href="#">찜한 매물</a></li>
+                        <li><a href="#">오피스텔 내놓기(전월세만)</a></li>
+                     </ul>
+                  </li>
+                  <li>
+                     <a href="#">
+                        <span class="w1">창업/사무실</span>
+                        <span class="w2">임대/매매</span>
+                     </a>
+                     <ul class="sub-menu">
+                        <li><a href="#">상가/점포</a></li>
+                        <li><a href="#">사무실</a></li>
+                        <li><a href="#">공유오피스</a></li>
+                        <li><a href="#">찜한 매물</a></li>
+                        <li><a href="#">상가/사무실 내놓기</a></li>
+                     </ul>
+                  </li>
+               </ul>
+               <div class="right-menu" style="width: calc(100% - 1100px); display: flex; justify-content: flex-end">
+                  <div style="display: flex">
+                     <button type="button" class="login">로그인 및 회원가입</button>
+                     <div class="right-menu__btn">
+                        중개사무소 가입 <br />
+                        및 광고문의
+                     </div>
+                     <div>&gt;</div>
+                  </div>
+               </div>
+            </nav>
+         </header>
+         <main class="main">
+            <nav class="main_screen">
+               <section class="main-section sumnail">
+                  <div class="textbox1">
+                     <div class="textbox2">
+                        <p>어떤 집을 찾고 계세요?</p>
+                     </div>
+                  </div>
+                  <!-- 탭 메뉴창 -->
+                  <div class="main_bar">
+                     <div class="tab-menu">
+                        <div class="tab-sub sub1">아파트</div>
+                        <div class="tab-sub sub2">빌라,투룸+</div>
+                        <div class="tab-sub sub3">원룸</div>
+                        <div class="tab-sub sub4">오피스텔</div>
+                        <div class="tab-sub sub5">상가</div>
+                     </div>
+
+                     <!-- 인풋 부트스트랩 -->
+                     <div class="tab_menu2">
+                        <div class="input-group mb-3">
+                           <input type="text" class="form-control" placeholder="원하시는 지역명,지하철역,단지명(아파트명)을 입력해주세요" aria-label="Recipient's username" aria-describedby="button-addon2" />
+                           <label for="button-addon2"></label>
+                           <button class="btn btn-outline-secondary" type="button" id="button-addon2"><i class="fa-solid fa-magnifying-glass"></i></button>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- 소개,뉴스,공지사항 -->
+               </section>
+               <section class="main-section news">
+                  <div class="news-wrap">
+                     <div class="sub-news money">
+                        <div><p>소개할게요</p></div>
+                        <hr />
+                        <div></div>
+                     </div>
+                     <div class="sub-news news2">
+                        <div class="sub-news_text">
+                           <p>뉴스</p>
+                           <div><button type="button" class="news_button1">더보기</button></div>
+                        </div>
+                        <hr />
+                     </div>
+
+                     <div class="sub-news option">
+                        <div class="sub-news_option">
+                           <p>공지사항</p>
+                           <div><button type="button" class="news_button2">더보기</button></div>
+                        </div>
+                        <hr />
+                     </div>
+                  </div>
+               </section>
+               <!-- 직방앱 다운 이미지 -->
+               <section class="main-section download">
+                  <!-- 폰 사진 -->
+                  <div class="download_phone">
+                     <a href="#" class="phone">
+                        <img src="./images/phone.png" alt="핸드폰" />
+                     </a>
+                  </div>
+                  <div class="download_banner">
+                     <div class="banner_text"><p>직방앱을 다운받으세요!</p></div>
+
+                     <div class="download_bar">
+                        <div class="iphone">
+                           <a href="#">
+                              <i class="fa-brands fa-apple"></i>
+                              App Store
+                           </a>
+                        </div>
+                        <div class="android">
+                           <a href="#"><i class="fa-brands fa-google-play"></i> Android</a>
+                        </div>
+                     </div>
+                     =
+                  </div>
+               </section>
+            </nav>
+         </main>
+         <!-- 푸터 -->
+         <footer class="footer">
+            <div class="footer"></div>
+         </footer>
+      </div>
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+   </body>
+</html>
+=

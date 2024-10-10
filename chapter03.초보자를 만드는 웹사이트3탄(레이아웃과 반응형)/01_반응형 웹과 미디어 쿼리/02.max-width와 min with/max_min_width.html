@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Document</title>
+      <style>
+         * {
+            margin: 0;
+            padding: 0;
+         }
+
+         #wrap {
+            width: 100%;
+            /* 뷰포트가 줄어들어도 최소 960px보다 작아지지 x */
+            min-width: 960px;
+            height: 500px;
+            background-color: skyblue;
+            margin: 0 auto;
+         }
+
+         #wrap {
+            width: 100%;
+            /* 뷰포트가 늘어나도 최소 960px보다 커지지 x */
+            max-width: 960px;
+            height: 500px;
+            background-color: skyblue;
+            margin: 0 auto;
+         }
+      </style>
+   </head>
+   <body>
+      <div id="wrap"></div>
+   </body>
+</html>

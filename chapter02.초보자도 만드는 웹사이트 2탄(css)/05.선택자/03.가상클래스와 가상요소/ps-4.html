@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Document</title>
+      <style>
+         .contianer {
+            width: 960px;
+            margin: 0 auto;
+         }
+
+         ul li {
+            margin: 15px;
+         }
+         /* 특정 요소 앞에 내용이나 스타일 추가. */
+         /* before:: 특정 요소 뒤에 내용이나 스타일 추가. */
+         li.new::after {
+            content: 'NEW!!';
+            font-size: x-small;
+            padding: 2px, 4px;
+            margin: 0 10px;
+            border-radius: 2px;
+            background-color: red;
+            color: white;
+         }
+
+         /* 첫 번째 줄을 선택 */
+         li.new::first-line {
+            color: blue;
+         }
+         /* 첫 번째 글자를 선택 */
+         h1::first-letter {
+            color: aqua;
+         }
+      </style>
+   </head>
+   <body>
+      <div class="container">
+         <h1>제품 목록</h1>
+         <ul>
+            <li class="new">제품 A</li>
+            <li>제품 B</li>
+            <li>제품 C</li>
+            <li class="new">제품 D</li>
+         </ul>
+      </div>
+   </body>
+</html>

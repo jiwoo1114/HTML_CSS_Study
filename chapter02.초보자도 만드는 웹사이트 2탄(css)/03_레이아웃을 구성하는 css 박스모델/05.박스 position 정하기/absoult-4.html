@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Document</title>
+      <style>
+         div {
+            border: 1px solid black;
+         }
+
+         .parent {
+            position: relative;
+            height: 300px;
+         }
+
+         .child {
+            position: absolute;
+         }
+
+         /* absolute 사용시 부모태그가 relative라면 relative에 height를 작성해야 block태그가 정상적으로 쌓인다.
+ */
+      </style>
+   </head>
+   <body>
+      <div class="parent">
+         <div class="child">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque praesentium aspernatur quasi assumenda maiores voluptate consequuntur harum deleniti incidunt fuga, obcaecati, beatae repudiandae animi odit at tempore eum, cupiditate illum.</div>
+      </div>
+
+      <div class="parent">
+         <div class="child">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque praesentium aspernatur quasi assumenda maiores voluptate consequuntur harum deleniti incidunt fuga, obcaecati, beatae repudiandae animi odit at tempore eum, cupiditate illum.</div>
+      </div>
+   </body>
+</html>

@@ -1,0 +1,419 @@
+@charset "utf-8";
+
+/* 부트스트랩 사용 시 !important를 사용해 css 속성이 겹치는 부분의 우선순위를 지정해준다. */
+
+body {
+   /* 초기화 태그,폰트사이즈 지정 */
+   margin: 0;
+   padding: 0;
+   font-size: 0, 9em;
+}
+
+ul {
+   /* 리스트 블릿 초기화 태그 */
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+}
+
+a {
+   /* 링크 속성 초기화 태그 */
+   color: black;
+   text-decoration: none;
+}
+
+p {
+   margin: 0;
+}
+/* 고정형 레이아웃 */
+
+.wrap {
+   /* 고정형 레이아웃:전체 최소너비 지정 */
+   min-width: 1200px;
+   overflow: hidden;
+}
+
+/* 헤더 */
+header {
+   display: flex;
+   /* 정렬 */
+   height: 75px;
+   /* 헤더에 relative 지정.(고정형) */
+   position: relative;
+   border-bottom: 1px solid rgb(193, 193, 193);
+   align-items: center;
+}
+
+.nav {
+   /* ul 및 헤더 안 콘텐츠를 감싸는 태그 */
+   width: 1200px;
+   /* 가운데 정렬 */
+   margin: 0 auto;
+   display: flex;
+}
+
+.nav__menu {
+   /* ul 태그 */
+   display: flex;
+   width: 550px;
+   align-items: center;
+   justify-content: flex-end;
+}
+
+.nav__menu li {
+   padding: 0 10px; /*좌우 10px*/
+   /* list 태그에 여백을 줄 땐 margin보단 padding 사용 추천 */
+}
+
+.nav__logo {
+   display: block;
+   width: 150px;
+}
+
+.nav__top-button {
+   /* 여행 더 검색 부분 */
+   width: 500px;
+   display: flex;
+   align-items: center;
+   padding-left: 20px;
+}
+
+nav a:hover {
+   color: rgb(36, 36, 206);
+}
+
+.nav__top-button > .dropdown-menu {
+   width: 400px;
+}
+
+.nav__top-button > .dropdown-menu > li {
+   padding: 5px 5px;
+}
+
+.nav__top-button > .dropdown-menu a {
+   font-size: 0.9em;
+}
+
+/* 메인 */
+main {
+   width: 1200px;
+   margin: 0 auto;
+   overflow: hidden;
+}
+
+.main-section {
+   margin: 30px 0; /*위아래 30px-마진 중첩*/
+}
+
+.main__top {
+   height: 260px;
+}
+
+.main__sso {
+   height: 60px;
+}
+
+.tab-pane__sub {
+   width: 1100px;
+   margin: 0 auto;
+   margin-top: 25px;
+}
+
+.tab-pane__sub > div {
+   display: flex;
+   justify-content: center;
+}
+
+.btn-main {
+   background: transparent;
+   border: 1px solid gray;
+   border-radius: 5px;
+   padding: 10px;
+   text-align: left;
+   margin: 15px 5px;
+   font-size: 15px;
+   height: 50px;
+   display: flex;
+   align-items: center;
+}
+
+.btn-main > div {
+   padding: 0 10px;
+}
+
+.sso__content {
+   height: 60px;
+   background-color: #343b53;
+   color: white;
+   border-radius: 10px;
+   display: flex;
+   align-items: center;
+   padding-top: 5px;
+}
+
+.sso__content > p:nth-child(1) {
+   width: 80px;
+   text-align: center;
+   line-height: 60px;
+}
+
+.sso__content > p:nth-child(2) {
+   width: 1120px;
+}
+
+.sso__content > p:nth-child(2) > a {
+   color: white;
+   text-decoration: underline;
+}
+
+.main__banner1 {
+   height: 500px;
+}
+
+.banner1__content {
+   height: 500px;
+   background-image: linear-gradient(rgba(1, 2, 23, 0.5), rgba(0, 0, 0, 0.2)), url(../images/banner1.jpg);
+   background-repeat: no-repeat;
+   background-position: center;
+   background-color: 100% 100%;
+   border-radius: 10px;
+   color: white;
+   display: flex;
+}
+
+.banner1__content > div:nth-child(1) {
+   width: 500px;
+   padding: 70px 40px;
+}
+
+.banner1__content > div:nth-child(2) {
+   width: 700px;
+}
+
+.main__banner2 {
+   height: 260px;
+}
+
+.banner2__content {
+   height: 260px;
+   border-radius: 10px;
+   border: 1px solid black;
+   display: flex;
+}
+
+.banner2__content > div:nth-child(1) {
+   width: 400px;
+   border-radius: 10px 0 0 10px;
+   background-image: url(../images/banner2.jpg);
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: 100% 100%;
+}
+.banner2__content > div:nth-child(2) {
+   width: 550px;
+   padding: 5px 15px;
+}
+.banner2__content > div:nth-child(3) {
+   width: 250px;
+   padding: 30px 0;
+}
+
+.main__travel-helper {
+   height: 140px;
+}
+
+.travel-helper__content {
+   height: 80px;
+   display: flex;
+}
+
+.travel-helper__content > h2 {
+   font-size: 30px;
+   font-weight: 500;
+}
+
+.bth-helper {
+   border: 1px solid gray;
+   border-radius: 10px;
+   text-align: left;
+   width: 33.33%;
+   cursor: pointer; /*커서를 가져가면 커서모양 손가락으로 변경*/
+   margin: 0 10px;
+   padding: 14px;
+}
+
+.bth-helper > div {
+   display: flex;
+   align-items: center;
+}
+
+.bth-helper > div > div:nth-child(1) {
+   width: 70%;
+   font-size: 20px;
+}
+
+.bth-helper > div > div:nth-child(2) {
+   width: 35%;
+   text-align: right;
+}
+.main__banner3 {
+   height: 190px;
+   display: flex;
+   border: 1px solid gray;
+   border-radius: 10px;
+}
+
+.main__banner3 > .banner3__content {
+   display: flex;
+   /* div 차례대로 정렬 */
+   width: 100%;
+}
+
+.banner3__content > div:nth-child(1) {
+   width: 55%;
+   box-sizing: border-box;
+   border-radius: 10px 0 0 10px;
+   /* 이미지 외곽선  */
+   background-image: url(../images/banner3.jpg);
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: 100% 100%;
+}
+
+.banner3__content > div:nth-child(2) {
+   width: 45%;
+   padding: 10px 20px;
+}
+
+.banner3__content > div:nth-child(2) > p {
+   margin: 0;
+   /* 텍스트 사이의 간격 줄이기 */
+}
+
+.main__early-reservation > div {
+   display: flex;
+   /* div 안의 a 태그 2개 차례대로 정렬 */
+}
+.main__early-reservation > div > .early-reservation1 {
+   border-radius: 10px;
+   background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.2), rgba(5, 1, 20, 0.8)), url(../images/early1.jpg);
+   /* 이미지,그라데이션 주기 */
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+   /* 이미지 설정 */
+   height: 250px;
+   width: 880px;
+   /* 높이,너비 */
+   margin-right: 20px;
+   padding-left: 10px;
+   /* mrgin,paddin으로 간격 정리 */
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-end;
+   /* <a> 속 <p> 정리 - 주축 세로로 교체 후 끝으로 정렬.*/
+}
+
+.early-reservation1 > p {
+   margin: 0;
+   /* <p>사이의 간격 줄이기 */
+}
+
+.main__early-reservation > div > .early-reservation2 {
+   width: 350px;
+}
+
+.main__more {
+   height: 60px;
+}
+
+.main__more > div {
+   height: 60px;
+   text-align: center;
+   padding: 20px 0;
+}
+
+.main__more a {
+   color: #0000ff;
+}
+
+.main__more a:hover {
+   text-decoration: underline;
+}
+/* 푸터 */
+footer {
+   height: 600px;
+}
+
+.footer_content {
+   width: 1200px;
+   margin: 0 auto;
+}
+
+.footer_content > div:nth-child(1) {
+   border-bottom: 1px solid gray;
+}
+
+.sitemap {
+   display: flex;
+}
+
+.sitemap > li {
+   /* 부모태그가 px로 고정이 되어있을 경우  */
+   width: 25%;
+   padding: 10px;
+}
+
+.sitemap > li > ul {
+   padding-top: 10px;
+}
+
+.sitemap > li > ul > li {
+   padding: 7px 0;
+}
+
+.sitemap > li > ul > li a {
+   color: blue;
+   font-size: 12px;
+}
+
+.footer_content > div:nth-child(2) {
+   padding: 50px 0;
+}
+
+/* 지원버튼 */
+
+.surport {
+   position: fixed;
+   right: 20px;
+   bottom: 20px;
+   width: 80px;
+   height: 35px;
+   border-radius: 30px;
+   box-shadow: 2px 2px 2px 2px rgb(228, 228, 228);
+   text-align: center;
+   color: rgb(8, 8, 124);
+}
+
+.surport:hover {
+   background-color: skyblue;
+}
+
+/* 모달 */
+.modal-body {
+   height: 300px;
+   overflow-y: scroll;
+}
+
+.modal-body > h3 {
+   font-size: 18px;
+   font-weight: bold;
+}
+
+.modal-body > ul a {
+   color: rgb(36, 36, 206);
+}
+
+.modal-body > ul a:hover {
+   text-decoration: underline;
+}

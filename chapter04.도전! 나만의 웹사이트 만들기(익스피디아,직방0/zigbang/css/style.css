@@ -1,0 +1,338 @@
+/* 초기화 css */
+body {
+   margin: 0;
+   padding: 0;
+   font-size: 0.9em;
+}
+
+ul {
+   list-style: none;
+   margin: 0;
+   padding: 0;
+}
+
+a {
+   color: black;
+   text-decoration: none;
+}
+
+p {
+   margin: 0;
+}
+
+/* 고정형 레이아웃 */
+.wrap {
+   /* width: 1200px; */
+   min-width: 1200px;
+   margin: 0 auto;
+   overflow: hidden;
+}
+
+/* 헤더 */
+
+header {
+   position: relative;
+   height: 85px;
+}
+
+.nav {
+   display: flex;
+   align-items: center;
+   border-bottom: 1px solid rgb(193, 193, 193);
+   background-color: white;
+   width: 100%; /*직방은 메뉴의 width가 100%*/
+}
+
+.nav__menu > li {
+   /* 하위 메뉴 만들기 위해 적용 */
+   position: relative;
+   top: 0;
+
+   /* 수평정렬 */
+   display: inline-block;
+   padding: 20px;
+}
+
+.nav .login {
+   font-size: 11px;
+   background-color: rgb(232, 232, 232);
+   border: 1px solid rgb(202, 202, 202);
+   border-radius: 5px;
+   color: black;
+   width: 125px;
+   height: 30px;
+   margin-right: 20px;
+}
+nav .right-menu__btn {
+   width: 113px;
+}
+
+.w1 {
+   display: block;
+   font-size: 17px;
+   font-weight: bold;
+}
+
+.w2 {
+   display: block;
+   font-size: 13px;
+}
+
+.right-menu {
+   display: flex;
+}
+
+/* 하위메뉴 */
+
+.sub-menu {
+   display: none; /*안 보이게 하는 것*/
+   width: 200px;
+   background-color: white;
+
+   /* 하위 메뉴 만들기 위해 absolute 적용(li태그를 기준으로 위치를 찾는다) */
+   position: absolute;
+
+   /* 하위메뉴가  나타날 위치(메뉴 height와 같다) */
+   top: 85px;
+   border: 1px solid gray;
+}
+
+.nav__menu li:hover .sub-menu {
+   display: block;
+}
+
+.sub-menu > li {
+   padding: 10px;
+}
+
+/* 메인 */
+.sumnail {
+   height: 470px;
+   background-image: url(../images/bg.jpg);
+   background-position: cover;
+   background-repeat: no-repeat;
+   background-size: 100% 100%;
+}
+
+.news {
+   height: 270px;
+}
+
+.download {
+   height: 350px;
+}
+
+.textbox1 {
+   margin: 0 auto;
+   width: 940px;
+   height: 180px;
+   padding-top: 130px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.textbox2 {
+   display: flex;
+   justify-content: center;
+   width: 680px;
+   height: 45px;
+   color: white;
+}
+
+.textbox2 > p {
+   color: white;
+   font-weight: bold;
+   font-size: 45px;
+}
+
+.main_bar {
+   margin: 40px auto 0;
+   display: block;
+   width: 700px;
+   height: 200px;
+}
+
+.tab-menu {
+   margin: 0 auto;
+   width: 574px;
+   height: 40px;
+   line-height: 40px;
+   display: flex;
+   background-color: rgba(4, 17, 59, 0.8);
+   font-weight: 900;
+   border-radius: 10px;
+}
+
+.tab-sub {
+   width: 20%;
+   text-align: center;
+   color: white;
+}
+
+.tab-sub.sub1 {
+   background-color: white;
+   width: 20%;
+   text-align: center;
+   color: black;
+   border-radius: 8px;
+}
+
+.tab_menu2 {
+   margin: 20px auto;
+   width: 600px;
+   height: 140px;
+}
+
+.input-group > input {
+   margin-top: 10px;
+   padding: 15px 25px;
+}
+
+.btn {
+   margin-top: 10px;
+   background-color: orange;
+}
+
+.news {
+   width: 100%;
+   padding-top: 30px;
+   margin: 0 auto;
+}
+
+.news-wrap {
+   width: 1200px;
+   display: flex;
+   justify-content: center;
+   margin: 0 auto;
+}
+
+.sub-news {
+   width: 300px;
+   height: 270px;
+   padding: 10px;
+   margin: 0 5px;
+}
+
+.money div:nth-of-type(1) {
+   height: 20px;
+}
+
+.money div:nth-of-type(2) {
+   background-image: url(../images/money.png);
+   background-position: center;
+   background-size: 100% 100%;
+}
+
+.money p {
+   font-size: 20px;
+   font-weight: bolder;
+}
+
+.sub-news_text {
+   display: flex;
+   height: 20px;
+}
+
+.sub-news_text > p {
+   width: 70%;
+   font-size: 20px;
+   font-weight: bolder;
+}
+
+.sub-news_option {
+   display: flex;
+   height: 20px;
+}
+
+.sub-news_option > p {
+   width: 70%;
+   font-size: 20px;
+   font-weight: bolder;
+}
+
+.news_button1,
+.news_button2 {
+   border: none;
+   border-radius: 5px;
+   font-weight: bold;
+   padding: 5px;
+}
+
+.news_button1:hover,
+.news_button2:hover {
+   background-color: darkgrey;
+}
+/* 메인3 직방앱 다운로드 부분분 */
+.download {
+   height: 350px;
+   background-color: lightgrey;
+   display: flex;
+   justify-content: center;
+}
+
+.download_phone {
+   width: 400px;
+   height: 350px;
+   margin-left: 300px;
+}
+.phone > img {
+   width: 330px;
+   height: 350px;
+   margin-left: 80px;
+}
+
+.download_banner {
+   width: 800px;
+   height: 280px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: flex-start;
+   margin-top: 50px;
+}
+
+.banner_text {
+   font-size: 20px;
+   font-weight: bolder;
+   /* padding-left: 50px; */
+   text-align: center;
+}
+
+.download_bar {
+   display: flex;
+   padding-top: 20px;
+   width: 300px;
+   margin-top: 30px;
+}
+
+.iphone {
+   background-color: darkgrey;
+   border-radius: 5px;
+   margin-right: 10px;
+   padding: 10px;
+   width: 150px;
+   text-align: center;
+   font-size: 20px;
+   font-weight: bolder;
+}
+
+.android {
+   background-color: darkgrey;
+   border-radius: 5px;
+   padding: 10px;
+   width: 150px;
+   text-align: center;
+   font-size: 20px;
+   font-weight: bolder;
+}
+
+.iphone:hover,
+.android:hover {
+   background-color: grey;
+}
+
+/* footer */
+footer {
+   height: 300px;
+}

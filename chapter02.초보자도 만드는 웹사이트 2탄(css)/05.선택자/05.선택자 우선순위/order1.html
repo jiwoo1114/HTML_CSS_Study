@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Document</title>
+      <style>
+         /* 인라인방식> id선택자>class 선택자>태그 선택자. */
+         p {
+            /* !important:제일 우선순위로 스타일을 적용시키겠다. */
+            color: blue !important;
+         }
+
+         #para {
+            color: red;
+         }
+
+         .para {
+            color: yellow;
+         }
+      </style>
+   </head>
+   <body>
+      <p id="para" class="para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit rerum amet labore quibusdam veniam tempora? Eveniet, autem minus exercitationem numquam, velit tenetur fugiat ipsa a hic eius cupiditate possimus doloremque!\</p>
+   </body>
+</html>

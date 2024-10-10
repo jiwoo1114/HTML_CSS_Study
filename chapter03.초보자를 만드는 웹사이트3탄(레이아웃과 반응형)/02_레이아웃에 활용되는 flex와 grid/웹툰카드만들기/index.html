@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ko">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Document</title>
+      <style>
+         * {
+            margin: 0;
+            padding: 0;
+         }
+
+         a {
+            color: black;
+            text-decoration: none;
+         }
+
+         li {
+            list-style: none;
+         }
+
+         .wrap {
+            margin: 0 auto; /*가운데 정렬*/
+            max-width: 1024px; /*1024px 보다 커지지x*/
+            width: 1024px;
+         }
+
+         .menu {
+            margin: 30px;
+         }
+
+         .menu > .menu_sub {
+            display: flex;
+         }
+
+         .menu > .menu_sub > h2,
+         .menu > .menu_sub > div {
+            width: 50%;
+         }
+
+         .menu > .menu_sub > div {
+            text-align: right;
+            padding-right: 10px;
+         }
+
+         .new {
+            display: flex;
+         }
+
+         .new > .new_sub {
+            margin: 0 5px; /*좌우 5px*/
+            /* flex는 width 계산을 알아서 해주므로 선택사항.
+            float나 inline - block 사용 시 계산 필요 */
+            /* (1024 - 30px(margin)) / 3(리스트 갯수)*/
+            width: 331.33px;
+         }
+
+         .new > .new_sub .toon_img1 {
+            background: url(../images/webtoon1.png);
+            background-repeat: no-repeat;
+            background-size: cover; /*이미지 비율에 맞게 div 꽉 채움*/
+            background-color: black;
+            background-position: center;
+            border-radius: 10px;
+            /* div에 백그라운드 이미지 적용시 height를 적용. */
+            height: 250px;
+         }
+         .new > .new_sub .toon_img2 {
+            background: url(../images/webtoon2.png);
+            background-repeat: no-repeat;
+            background-size: cover; /*이미지 비율에 맞게 div 꽉 채움*/
+            background-color: bisque;
+            background-position: center;
+            border-radius: 10px;
+            height: 250px;
+         }
+         .new > .new_sub .toon_img3 {
+            background: url(../images/webtoon3.png);
+            background-repeat: no-repeat;
+            background-size: cover; /*이미지 비율에 맞게 div 꽉 채움*/
+            background-color: #810505;
+            background-position: center;
+            border-radius: 10px;
+            height: 250px;
+         }
+
+         a img {
+            width: 30px;
+            display: inline-block; /*margin 적용 위하여*/
+            margin: 5px; /*margin 좌우는 중첩x*/
+         }
+
+         .intro {
+            display: block;
+            padding: 1.5px;
+         }
+
+         .ellipsis {
+            width: 100%; /* 필요한 너비를 설정(필수) */
+            white-space: nowrap; /* 텍스트가 줄 바꿈되지 않도록 설정(필수) */
+            overflow: hidden; /* 넘치는 텍스트를 숨김(필수) */
+            text-overflow: ellipsis; /* 넘치는 텍스트를 말줄임표로 표시(필수) */
+         }
+
+         /* 660px ~ 1023px */
+         @media all and (min-width: 668px) and (max-width: 1023px) {
+            .wrap {
+               width: 100%;
+            }
+            .new > .new_sub {
+               margin: 0, 0.48%; /*10px / 1024px *100 */
+               width: 32.35%; /*331.33px / 1024px *100 */
+            }
+         }
+
+         @media all and (max-width: 667px) {
+            .wrap {
+               width: 100%;
+            }
+
+            .new > .new_sub {
+               margin: 0, 0, 20px, 0;
+               width: 100%;
+            }
+
+            .new {
+               display: flex;
+               flex-direction: column;
+            }
+         }
+      </style>
+   </head>
+   <body>
+      <div class="wrap">
+         <div class="menu">
+            <div class="menu_sub">
+               <h2>이달의 신규 웹툰</h2>
+               <div>
+                  <a href="#">신작웹툰 더보기</a>
+               </div>
+            </div>
+         </div>
+         <ul class="new">
+            <li class="new_sub">
+               <a href="#">
+                  <div class="toon_img1">
+                     <img src="../images/new_icon.png" alt="로고" />
+                  </div>
+               </a>
+               <div>
+                  <a href="#" class="intro" style="font-weight: bold">웹툰제목</a>
+                  <a href="#" class="intro">작가명/작가명/작가명</a>
+                  <p class="intro ellipsis">줄거리 줄거리 어쩌고 저쩌고 어쩌고 저쩌고 저쩌고 어쩌고 저쩌고 어쩌고 저쩌고 어쩌고 저쩌고 어쩌고 저쩌고 어쩌고 저쩌고 어쩌고</p>
+               </div>
+            </li>
+            <li class="new_sub">
+               <a href="#">
+                  <div class="toon_img2">
+                     <img src="../images/new_icon.png" alt="로고" />
+                  </div>
+               </a>
+               <div>
+                  <a href="#" class="intro" style="font-weight: bold">웹툰제목</a>
+                  <a href="#" class="intro">작가명/작가명/작가명</a>
+                  <p class="into ellipsis">줄거리 줄거리 어쩌고 저쩌고 어쩌고 저쩌고 저쩌고 어쩌고 저쩌고 어쩌고 저쩌고 어쩌고 저쩌고 어쩌고 저쩌고 어쩌고 저쩌고 어쩌고</p>
+               </div>
+            </li>
+            <li class="new_sub">
+               <a href="#">
+                  <div class="toon_img3">
+                     <img src="../images/new_icon.png" alt="로고" />
+                  </div>
+               </a>
+               <div>
+                  <a href="#" class="intro" style="font-weight: bold">웹툰제목</a>
+                  <a href="#" class="intro">작가명/작가명/작가명</a>
+                  <p class="into ellipsis">줄거리 줄거리 어쩌고 저쩌고 어쩌고 저쩌고 저쩌고 어쩌고 저쩌고 어쩌고 저쩌고 어쩌고 저쩌고 어쩌고 저쩌고 어쩌고 저쩌고 어쩌고</p>
+               </div>
+            </li>
+         </ul>
+         <div class="new"></div>
+      </div>
+   </body>
+</html>

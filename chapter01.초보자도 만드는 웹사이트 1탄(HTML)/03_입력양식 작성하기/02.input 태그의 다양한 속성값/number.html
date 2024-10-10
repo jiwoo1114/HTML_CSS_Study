@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <fieldset>
+        <legend>상품선택</legend>
+        <p>주문할 상품을 선택하세요</p>
+        <ul>
+            <li>
+                <input type="checkbox"> 선물용 3kg
+                <input type="number" min="0" max="6" step="2">개
+                (최대 6개)
+            </li>
+            <li>
+                <input type="checkbox">선물용 5kg
+                <input type="number" min="0" max="3" step="1" value="1">개
+                (최대 3개)
+            </li>
+            <li><input type="checkbox"> 가정용 3kg
+                <input type="range" min="0" max="3" value="1">개
+                (최대 3개)
+            </li>
+            <li><input type="range" min="0" max="6" value="2"></li>
+        </ul>
+    </fieldset>
+</body>
+</html>
