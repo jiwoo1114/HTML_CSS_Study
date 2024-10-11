@@ -418,6 +418,21 @@ footer {
    padding-top: 20px;
 }
 
+.fa-icon{
+   margin: 15px 0;
+   text-align: center;
+   height: 50px;
+   line-height: 50px;
+}
+
+.fa-icon > a{
+   display: inline-block;
+   margin-right: 5px;
+   border: 0.5px solid lightgrey;
+   width: 50px;
+   background-color: aliceblue;
+}
+
 .footer_underbar{
    padding-right: 5px;
    border-right: 1px solid lightgray;
